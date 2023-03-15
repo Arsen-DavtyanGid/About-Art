@@ -1,0 +1,736 @@
+.logo {
+  background-image: url("./images/Logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 136px;
+  height: 40px;
+}
+.nav-logo {
+  padding: 20px 0;
+}
+nav {
+  background: rgba(50, 50, 50, 0.7);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.links {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+  padding: 30px 25px;
+}
+.links a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+  color: #dedede;
+  text-decoration: none;
+  padding: 0 2px;
+  transition: all 0.2s;
+}
+.links a:hover {
+  color: #ffffff;
+}
+.box {
+  width: 100%;
+  height: 100vh;
+  background: rgba(50, 50, 50, 0.7);
+  backdrop-filter: blur(20px);
+  transition: all 0.3s;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  z-index: 10;
+}
+.box-links {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.box-links ul {
+  list-style: none;
+  padding: 0 10px;
+  margin: 0;
+}
+.box-links ul li {
+  padding-top: 40px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(127, 127, 127);
+}
+.box-links a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+  color: #dedede;
+  text-decoration: none;
+  padding: 0 2px;
+  transition: all 0.2s;
+}
+.box-links a:hover {
+  color: #ffffff;
+}
+
+.b {
+  left: 0;
+}
+.manu {
+  cursor: pointer;
+}
+.links .manu {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .links .manu {
+    display: block;
+    z-index: 100;
+  }
+  .links a {
+    display: none;
+  }
+}
+main {
+  background-color: #323232;
+  color: white;
+}
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+.avatar-image {
+  width: 400px;
+  height: 400px;
+  background-image: url("./images/avatar-person.png");
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-text1 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 70px;
+  letter-spacing: 1.5px;
+  color: #dedede;
+  padding-top: 200px;
+  padding-bottom: 24px;
+}
+.section-text2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  color: #959595;
+  width: 420px;
+  padding-bottom: 64px;
+}
+.section-button1 button {
+  width: 400px;
+  height: 64px;
+  padding: 16px 48px;
+  gap: 16px;
+  background: #9d9d9d;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  transition: all 0.2s;
+}
+.section-button1 button svg {
+  transition: all 0.3s;
+}
+.section-button1 button:hover svg {
+  transform: translateX(-90px);
+}
+.section-button1 {
+  padding-bottom: 157px;
+}
+.section-text3 {
+  font-family: "Manrope";
+  font-size: 19px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.imgg {
+  padding-top: 80px;
+}
+
+.section-text3 svg {
+  transition: all 0.2s;
+}
+.section-text3:hover svg {
+  transform: translateY(5px);
+}
+.section-text3 svg {
+  padding-right: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+  .reserve {
+    flex-direction: column-reverse;
+  }
+  .avatar {
+    padding: 144px 64px;
+  }
+  .section-text1 {
+    padding-top: 0;
+  }
+  .right-images {
+    padding-top: 0 !important;
+  }
+  .right-images-2 {
+    padding-top: 24px;
+  }
+  .second-image-2,
+  .second-image-3,
+  .second-image-4,
+  .second-image-5,
+  .second-image-6 {
+    margin-top: 16px;
+  }
+  .third-image-3-2,
+  .third-image-3-3 {
+    margin-top: 16px;
+  }
+  .fake-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fake-icons {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .foot-cont-row {
+    flex-direction: column-reverse !important;
+  }
+}
+.right-images {
+  padding-top: 120px;
+}
+.inVersion-img-1 {
+  background-image: url("./images/image-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 888px;
+  margin-bottom: 24px;
+}
+
+.inVersion-img-2 {
+  background-image: url("./images/image-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 888px;
+  margin-bottom: 24px;
+}
+.inVersion-img-3 {
+  background-image: url("./images/image-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 888px;
+  margin-bottom: 24px;
+}
+.inVersion-img-4 {
+  background-image: url("./images/image-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 888px;
+  margin-bottom: 24px;
+}
+.visual {
+  text-align: center;
+  padding-top: 210px;
+  padding-bottom: 65px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: -0.5px;
+  color: #dedede;
+}
+
+.second-image-1 {
+  background-image: url("./images/image-2-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.second-image-2 {
+  background-image: url("./images/image-2-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.second-image-3 {
+  background-image: url("./images/image-2-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.first-floor {
+  margin-bottom: 24px;
+}
+.second-image-4 {
+  background-image: url("./images/image-2-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.second-image-5 {
+  background-image: url("./images/image-2-5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.second-image-6 {
+  background-image: url("./images/image-2-6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.third-image-3-1 {
+  width: 100%;
+  height: 560px;
+  background-image: url("./images/image-3-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.third-image-3-2 {
+  width: 100%;
+  height: 560px;
+  background-image: url("./images/image-3-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.third-image-3-3 {
+  width: 100%;
+  height: 560px;
+  background-image: url("./images/image-3-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.visual-text {
+  width: 476px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #959595;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-bottom: 46px;
+}
+.visual-real-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-button2 {
+  text-align: center;
+  padding-bottom: 119px;
+}
+.section-button2 button {
+  width: 400px;
+  height: 64px;
+  padding: 16px 48px;
+  gap: 16px;
+  background: #9d9d9d;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+.section-button2 button svg {
+  transition: all 0.3s;
+}
+.section-button2 button:hover svg {
+  transform: translateX(-90px);
+}
+.visual-text-first {
+  text-align: center;
+  padding-top: 240px;
+  padding-bottom: 24px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: -0.5px;
+  color: #dedede;
+}
+.foot {
+  width: 100%;
+  border-top: 1px solid #696969;
+}
+.fake-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.real-text {
+  color: #ececec;
+}
+.real-text span {
+  color: #959595;
+}
+
+.foot-cont-col {
+  background-color: #323232;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.foot-cont {
+  background-color: #323232;
+}
+.fake-icons {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.icons a path {
+  transition: all 0.3s;
+}
+.icons a:hover path {
+  fill: #ffffff;
+}
+.company {
+  width: 100%;
+  height: 640px;
+  background-image: url("./images/company.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 128px;
+}
+.covibe-text-1 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #dedede;
+  opacity: 0.7;
+  padding-bottom: 12px;
+}
+.covibe-text-2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #dedede;
+  width: 340px;
+  padding-bottom: 112px;
+}
+.covibe-text-2-1 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #dedede;
+  opacity: 0.7;
+  padding-bottom: 12px;
+}
+.covibe-text-2-2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.5px;
+  color: #dedede;
+}
+.company-row {
+  padding-bottom: 290px;
+}
+.covibe-text-33-1 {
+  padding-bottom: 12px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #dedede;
+  opacity: 0.7;
+}
+.covibe-text-33-2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 54px;
+  letter-spacing: -0.5px;
+  color: #dedede;
+}
+.company-row-3 {
+  padding-bottom: 88px;
+}
+.covibe-text-4 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #dedede;
+  opacity: 0.7;
+  border-bottom: 1px solid #a5a5a5;
+  width: 197px;
+  padding-bottom: 10px;
+}
+.company-row-4 {
+  padding-bottom: 112px;
+}
+@media only screen and (max-width: 768px) {
+  .covibe-text-22 {
+    padding-bottom: 80px !important;
+  }
+  .company-row {
+    padding-bottom: 125px !important;
+  }
+  .covibe-text-33-2 {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: -0.5px;
+    color: #dedede;
+  }
+  .covibe-text-4 {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #dedede;
+    opacity: 0.7;
+    width: 180px;
+  }
+  .rectangle-row {
+    padding-bottom: 210px !important;
+    flex-direction: column-reverse !important;
+  }
+  .rectangle-row2 {
+    padding-bottom: 210px !important;
+  }
+  .rectangle-row33 {
+    padding-bottom: 110px !important;
+  }
+  .rectangle-row44 {
+    padding-bottom: 140px !important;
+  }
+  .company-2 {
+    margin-bottom: 134px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .rectangle-row {
+    padding-bottom: 110px !important;
+    flex-direction: column-reverse !important;
+  }
+  .rectangle-row2 {
+    padding-bottom: 110px !important;
+  }
+  .rectangle-row33 {
+    padding-bottom: 110px !important;
+  }
+  .rectangle-row44 {
+    padding-bottom: 140px !important;
+  }
+  .company-2 {
+    margin-bottom: 54px !important;
+  }
+
+}
+.company-2 {
+  background-image: url("./images/company-2.png");
+  width: 100%;
+  height: 770px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 234px;
+}
+.rectangle {
+  width: 100%;
+  height: 760px;
+  background-image: url("./images/Rectangle1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rectangle-2 {
+  width: 100%;
+  height: 760px;
+  background-image: url("./images/Rectangle2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rectangle-all {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+}
+.rectangle-all-2 {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 100px;
+}
+.rectangle-text-1 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #dedede;
+  opacity: 0.7;
+  padding-bottom: 12px;
+}
+.rectangle-text-2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 54px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+.rectangle-row {
+  padding-bottom: 275px;
+}
+.rectangle-row2 {
+  padding-bottom: 216px;
+}
+.rectangle-row3-text-1 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #dedede;
+  opacity: 0.7;
+}
+.rectangle-row3-text-1 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 54px;
+  letter-spacing: -0.5px;
+  color: #dedede;
+}
+.rectangle-row33 {
+  padding-bottom: 128px;
+}
+.rectangle-row4 {
+  width: 100%;
+  height: 674px;
+  background-image: url("./images/Rectangle3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rectangle-row44 {
+  padding-bottom: 244px;
+}
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.next-text {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #dedede;
+  border-bottom: 1px solid #c4c4c4;
+}
+.final-row {
+  padding-bottom: 153px;
+}
